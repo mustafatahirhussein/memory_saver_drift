@@ -1,0 +1,7 @@
+CREATE TABLE memorysaver (
+    id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
+    memory_dt TEXT,
+    picture TEXT,
+    notes TEXT
+);
