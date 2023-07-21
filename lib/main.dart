@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:memory_saver_drift/memorysaver.dart';
+import 'package:memory_saver_drift/screens/memory_listing.dart';
+
+MyDatabase? memoryDb;
 
 void main() {
-  runApp(MaterialApp(
-    home: MyApp(),
-  ));
+  memoryDb = MyDatabase();
+  runApp(
+    MaterialApp(
+      home: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -11,6 +18,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return MemoryListing();
   }
 }
